@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Admin</title>
+    <link rel="stylesheet" href="Css/cinemaAdmin.css">
+</head>
+
+<body>
+    <div class="admin">
+    <div class="tab">
+        <a href="cinemaAdmin.html"><button class="tablinks" id="defaultOpen" onclick="handleclick(click , 'cinema')" id>Cinema</button></a>
+        <a href="movieAdmin.html"><button class ="tablinks" id="MovieAdmin" onclick="handleclick()">Movie</button></a>
+       
+        <a href="timeAdmin.html"> <button class="tablinks" id="TimeAdmin" onclick="handleclick()">Time</button></a>
+        <a href="seatAdmin.html"> <button class="tablinks" id="SeatAdmin" onclick="handleclick()">Seat</button></a>
+      </div>
+
+      <div id="cinema" class="tabcontent">
+        <h1>CINEMA</h1><hr>
+        
+        <form action="" id="cinemaform" >
+            <input type="text" name="Cinemaname" id="cinemaname" placeholder="Enter Cinema Name"><br><br>
+            <input type="text" name="cinemadesc" id="cinemadesc" placeholder="Enter Cinema Desc"><br><br>
+            <input type="text" name="cinemaaddress" id="cinemaaddress" placeholder="Enter Cinema Address "><br><br>
+            <input type="text" name="mobilenumber" id="mobilenumber" placeholder="Enter Mobile Number"><br><br>
+            <input type="text" name="email" id="email" placeholder="Enter Email"><br><br>
+            <input type="submit" id="submitbtn">
+        </form>
+        <div id="displaycinema">
+           
+        </div>
+      </div>
+      
+    </div>  
+
+    <script src="JS/cinemaAdmin.js"></script>
+</body>
+</html>

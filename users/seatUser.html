@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="css/seatuser.css">
+</head>
+<body>
+    <section class="top-bar">
+        <div class="left-content">
+            <h2 class="title">M4You</h2>
+            <ul class="navigation">
+                <li><a href="cinemauser.html">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="right-content">
+            <img src="../users/images/filter.png" alt="" class="filter">
+            <img src="../users/images/cart.png" alt="" class="cart">
+            <img src="../users/images/help.png" alt="" class="help">
+            <div class="profile-img-box">
+                <img src="../users/images/profile.jpg" alt="">
+            </div>
+            <img src="../users/images/menu.png" alt="" class="menu">
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="sidebar">
+            <form action="#">
+                <div class="sidebar-groups">
+                    <h3 class="sg-title">Categories</h3>
+                    <input type="checkbox" id="adventure" name="adventure" value="adventure">
+                    <label for="adventure">Adventure</label><br>
+                    <input type="checkbox" id="action" name="action" value="action">
+                    <label for="action">Action</label><br>
+                    <input type="checkbox" id="animation" name="animation" value="animation">
+                    <label for="animation">Animation</label><br>
+                    <input type="checkbox" id="comedy" name="comedy" value="comedy">
+                    <label for="comedy">Comedy</label><br>
+                    <input type="checkbox" id="science" name="science" value="science">
+                    <label for="science">Science Fiction</label><br>
+                    <input type="checkbox" id="thriller" name="thriller" value="thriller">
+                    <label for="thriller">Thriller</label><br>
+                    <input type="checkbox" id="history" name="history" value="history">
+                    <label for="history">History</label><br>
+                    <input type="checkbox" id="documentary" name="documentary" value="documentary">
+                    <label for="documentary">Documentary</label><br>
+                    <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">
+                    <label for="fantasy">Fantasy</label><br>
+
+                </div>
+                <div class="sidebar-groups">
+                    <h3 class="sg-title">Language</h3>
+                    <input type="checkbox" id="english" name="english" value="english">
+                    <label for="english">English</label><br>
+                    <input type="checkbox" id="spanish" name="spanish" value="spanish">
+                    <label for="spanish">Spanish</label><br>
+                    <input type="checkbox" id="hindi" name="hindi" value="hindi">
+                    <label for="hindi">Hindi</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <h3 class="sg-title">Time</h3>
+                    <input type="radio" id="morning" name="time" value="morning">
+                    <label for="morning">Morning</label><br>
+                    <input type="radio" id="night" name="time" value="night">
+                    <label for="night">Night</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <a href="#" class="btn-l btn">Apply Filters</a>
+                </div>
+            </form>
+        </div>
+        <div id="seat-container">
+            <h1>Seat</h1><br><br>
+            <div id="current-seats">
+            <div id="current-seat">
+                
+            </div>
+            <div id="disp"></div>
+            </div>
+        </div>
+       
+    </section>
+
+   <script src="js/seatUser.js"></script>
+</body>
+</html>

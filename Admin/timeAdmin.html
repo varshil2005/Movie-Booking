@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/timeAdmin.css">
+</head>
+<body>
+    <div class="admin">
+    <div class="tab">
+        <a href="cinemaAdmin.html"><button class="tablinks" id="defaultOpen" onclick="handleclick(click , 'cinema')" id>Cinema</button></a>
+        <a href="movieAdmin.html"><button class ="tablinks" id="MovieAdmin" onclick="handleclick()">Movie</button></a>
+       
+        <a href="timeAdmin.html"><button class="tablinks" id="TimeAdmin" onclick="handleclick()">Time</button></a>
+        <a href="seatAdmin.html"> <button class="tablinks" id="SeatAdmin" onclick="handleclick()">Seat</button></a>
+      </div>
+
+      <div class="tabcontent">
+        <h1>Time</h1><hr>
+    <form action="" id="timeForm">
+        Cinema: 
+        <select name="cinema" id="cinema">
+
+        </select>
+        <br><br>
+        
+        Movie:
+        <select name="movie" id="movie">
+
+        </select>
+        <br><br>
+
+       Time : 
+
+        <div id="all-time">
+            <div id="row-123">
+                <input type="time" name="m_time">
+                <button onclick="handleIncre(event)">+</button>
+                
+            </div>
+        </div><br><br>
+
+        <input type="submit"><br><br>
+
+        
+    </form>
+</div>
+    <div id="disp">
+            
+    </div>
+
+    </div>
+
+    <script src="JS/timeAdmin.js"></script>
+</body>
+</html>

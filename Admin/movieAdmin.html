@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Admin</title>
+    <link rel="stylesheet" href="Css/movieAdmin.css">
+</head>
+
+<body>
+    <div id="admin">
+
+        <div class="tab">
+            <a href="cinemaAdmin.html"><button class="tablinks" id="defaultOpen" onclick="handleclick(click , 'cinema')" >Cinema</button></a>
+     
+            <a href="movieAdmin.html"><button class="tablinks" id="MovieAdmin" onclick="handleclick()">Movie</button></a>
+    
+            <a href="timeAdmin.html"><button class="tablinks" id="TimeAdmin" onclick="handleclick()">Time</button></a>
+            
+           <a href="seatAdmin.html"> <button class="tablinks" id="SeatAdmin" onclick="handleclick()">Seat</button></a>
+            
+        </div>
+
+        <div id="movieform" class="tabcontent">
+            <h1>MOVIE</h1>
+            <hr>
+            <form id="moviAdminForm">
+              
+                <select name="cinema" id="cinema">
+
+                </select>
+
+                <input type="text" name="movie_name" id="movie_name" placeholder="Enter The Movie Name">
+                <input type="text" name="movie_desc" id="movie_desc" placeholder="Enter The Movie Desc">
+                <input type="file" name="movie_poster" id="movie_poster" onchange="handleImage()">
+                <input type="submit" id="submitbtn">
+                <hr>
+                <img src="" alt="poster image" id="poster_img" >
+                
+            </form><br><br>
+
+            <div id="moviedisp">
+
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="JS/movieAdmin.js"></script>
+</body>
+
+</html>

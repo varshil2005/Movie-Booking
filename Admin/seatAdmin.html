@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Admin</title>
+    <link rel="stylesheet" href="Css/seatAdmin.css">
+</head>
+<body>
+    <div class="admin">
+    <div class="tab">
+        <a href="cinemaAdmin.html"><button class="tablinks" id="defaultOpen" onclick="handleclick(click , 'cinema')" id>Cinema</button></a>
+        <a href="movieAdmin.html"><button class ="tablinks" id="MovieAdmin" onclick="handleclick()">Movie</button></a>
+       
+        <a href="timeAdmin.html"><button class="tablinks" id="TimeAdmin" onclick="handleclick()">Time</button></a>
+        <a href="seatAdmin.html"> <button class="tablinks" id="SeatAdmin" onclick="handleclick()">Seat</button></a>
+      </div>
+
+    <div id="seat" class="tabcontent">
+        <h1>Seat</h1><hr>
+    <form action="" id="seatForm">
+        <h3>Cinema : </h3><select name="cinema" id="cinema" ></select><br><br>
+        <h3>Movie : </h3><select name="movie" id="movie"></select><br><br>
+        <h3>time : </h3> <select name="time" id="time"></select><br><br>
+        <input type="number" id="total_seat" placeholder="Please Enter Total Seat"><br><br>
+        <input type="number" id="price" placeholder="please Enter Prize"><br><br>
+        <input type="submit">
+    </form>
+</div>
+
+    <div id="disp">
+        
+    </div>
+</div>
+
+    <script src="JS/seatAdmin.js"></script>
+</body>
+</html>
